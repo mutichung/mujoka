@@ -1,0 +1,28 @@
+@use "./base.scss";
+
+// Extended color vars not emitted by v5 theme engine
+:root {
+  --red: #E45649;
+  --orange: #986801;
+  --yellow: #C18401;
+  --green: #50A14F;
+  --blue: #4078F2;
+  --purple: #A626A4;
+}
+
+:root[saved-theme="dark"] {
+  --red: #e86671;
+  --orange: #d19a66;
+  --yellow: #e5c07b;
+  --green: #98c379;
+  --blue: #61afef;
+  --purple: #c678dd;
+}
+
+h1 { color: var(--red) }
+h2 { color: var(--orange) }
+h3 { color: var(--yellow) }
+h4 { color: var(--green) }
+h5 { color: var(--blue) }
+h6 { color: var(--purple) }
+
