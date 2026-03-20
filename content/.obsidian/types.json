@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "ingredients": "multitext",
+    "cover": "text",
+    "released": "number",
+    "director": "multitext",
+    "muti-score": "number",
+    "joanna-score": "number"
+  }
+}

@@ -1,0 +1,30 @@
+model:
+  version: 1
+  kind: Table
+  columns: []
+pluginVersion: 1.0.0
+filters:
+  and:
+    - file.folder == "recipes"
+    - file.ext == "md"
+    - file.basename != "index"
+    - file.basename != "All"
+views:
+  - type: cards
+    name: Cards
+    order:
+      - title
+      - tags
+      - ingredients
+    image: note.cover
+  - type: table
+    name: Table
+    order:
+      - title
+      - tags
+      - ingredients
+    sort:
+      - property: ingredients
+        direction: ASC
+      - property: tags
+        direction: ASC

@@ -4,7 +4,7 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics: ~
-  locale: zh-TW
+  locale: en-US
   baseUrl: ~
   ignorePatterns:
     - private
@@ -74,7 +74,7 @@ plugins:
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
-      markdownLinkResolution: relative
+      markdownLinkResolution: absolute
     order: 60
   - source: github:quartz-community/description
     enabled: true
@@ -126,6 +126,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
+      title: 目錄
       folderClickBehavior: link
       folderDefaultState: collapsed
     layout:
@@ -210,7 +211,7 @@ plugins:
     options:
       title: 最近
       limit: 5
-      showTags: false
+      showTags: true
       linkToMore: false
     layout:
       position: left
@@ -226,16 +227,22 @@ plugins:
       display: mobile-only
   - source: github:quartz-community/bases-page
     enabled: true
-    options: {}
+    options:
+      linkResoution: absolute
+      defaultView: cards
     order: 50
   - source: github:quartz-community/note-properties
     enabled: true
     options:
       includeAll: false
       includedProperties:
-        # - tags
-        - description
-        # - aliases
+        - director
+        - released
+        - english-title
+        - original-title
+        - joanna-score
+        - muti-score
+        - ingredients
       excludedProperties: []
       hidePropertiesView: false
       delimiters: "---"

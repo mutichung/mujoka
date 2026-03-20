@@ -1,0 +1,10 @@
+{
+  "showIndentGuide": true,
+  "tabSize": 2,
+  "useTab": false,
+  "vimMode": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./assets",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute"
+}
