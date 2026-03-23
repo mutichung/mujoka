@@ -1,6 +1,6 @@
 configuration:
-  pageTitle: "👦👧😺 MuJoKa"
-  pageTitleSuffix: " | むじょか"
+  pageTitle: "むじょか"
+  pageTitleSuffix: "｜むじょか"
   enableSPA: true
   enablePopovers: true
   analytics: ~
@@ -129,6 +129,7 @@ plugins:
       title: 目錄
       folderClickBehavior: link
       folderDefaultState: collapsed
+      useSavedState: false
     layout:
       position: left
       priority: 50
@@ -187,7 +188,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 5
-      condition: not-index
+      # condition: not-index
   - source: github:quartz-community/comments
     enabled: false
     options:

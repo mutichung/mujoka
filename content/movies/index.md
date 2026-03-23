@@ -4,6 +4,8 @@ created: 2026-01-01
 icon: LiVideo
 ---
 
+這是我們的電影海報牆！也可以切換到**一覽**來看看我們的評分XD
+
 ```base
 filters:
   and:
@@ -20,7 +22,7 @@ views:
       direction: DESC
     image: note.cover
     imageFit: contain
-    imageAspectRatio: 0.65
+    imageAspectRatio: 1.4
   - type: table
     name: 一覽
     order:
