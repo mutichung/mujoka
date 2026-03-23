@@ -7,7 +7,7 @@
     "cover": "text",
     "released": "number",
     "director": "multitext",
-    "muti-score": "number",
-    "joanna-score": "number"
+    "muti": "number",
+    "joanna": "number"
   }
 }

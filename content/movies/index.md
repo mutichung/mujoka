@@ -4,4 +4,35 @@ created: 2026-01-01
 icon: LiVideo
 ---
 
-這個分類蒐集了過去我們（主要是 Muti XD）做過的一些料理，可以從 [[movies/All|All]] 開始看起哦
+```base
+filters:
+  and:
+    - file.folder == "movies"
+    - file.basename != "index"
+    - file.basename != "All"
+formulas:
+  avg: "[joanna, muti].filter(value > 0).mean()"
+views:
+  - type: cards
+    name: 海報牆
+    groupBy:
+      property: released
+      direction: DESC
+    image: note.cover
+    imageFit: contain
+    imageAspectRatio: 0.65
+  - type: table
+    name: 一覽
+    order:
+      - title
+      - released
+      - joanna
+      - muti
+      - formula.avg
+    sort:
+      - property: released
+        direction: DESC
+      - property: title
+        direction: DESC
+
+```

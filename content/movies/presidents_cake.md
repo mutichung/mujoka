@@ -10,5 +10,5 @@ tags:
 cover: https://xl.movieposterdb.com/25_12/2026/36580119/xl_mamlaket-al-qasab-movie-poster_3e7f2c0e.jpg
 released: 2025
 muti:
-joanna:
+joanna: 5
 ---

@@ -228,7 +228,7 @@ plugins:
   - source: github:quartz-community/bases-page
     enabled: true
     options:
-      linkResoution: absolute
+      linkResolution: absolute
       defaultView: cards
     order: 50
   - source: github:quartz-community/note-properties
@@ -240,8 +240,8 @@ plugins:
         - released
         - english-title
         - original-title
-        - joanna-score
-        - muti-score
+        - joanna
+        - muti
         - ingredients
       excludedProperties: []
       hidePropertiesView: false
