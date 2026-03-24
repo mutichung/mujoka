@@ -10,6 +10,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - tools
   defaultDateType: created
   theme:
     fontOrigin: googleFonts

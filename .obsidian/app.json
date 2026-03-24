@@ -6,5 +6,9 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./assets",
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "userIgnoreFilters": [
+    "tools/",
+    "justfile"
+  ]
 }
