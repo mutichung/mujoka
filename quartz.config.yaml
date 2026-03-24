@@ -5,7 +5,7 @@ configuration:
   enablePopovers: true
   analytics: ~
   locale: en-US
-  baseUrl: ~
+  baseUrl: mutichung.github.io/mujoka
   ignorePatterns:
     - private
     - templates

@@ -1,0 +1,67 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: quartz/.node-version
+
+      - uses: extractions/setup-just@v2
+
+      - name: Copy assets and symlink config
+        run: just copy-assets
+
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v4
+        with:
+          path: quartz/node_modules
+          key: node-modules-${{ hashFiles('quartz/package-lock.json') }}
+
+      - name: Install npm dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: just install-deps
+
+      - name: Cache quartz plugins
+        id: cache-plugins
+        uses: actions/cache@v4
+        with:
+          path: quartz/.quartz/plugins
+          key: quartz-plugins-${{ hashFiles('quartz.lock.json') }}
+
+      - name: Resolve quartz plugins
+        if: steps.cache-plugins.outputs.cache-hit != 'true'
+        run: just install-plugins
+
+      - name: Build site
+        run: just build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
