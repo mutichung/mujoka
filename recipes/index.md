@@ -16,10 +16,14 @@ views:
   - type: cards
     name: 卡片
     order:
+      - title
       - tags
       - ingredients
+    sort:
+      - property: created
+        direction: DESC
     image: note.cover
-    imageAspectRatio: 1.0
+    imageAspectRatio: 1
   - type: table
     name: 一覽
     order:
@@ -31,4 +35,5 @@ views:
         direction: ASC
       - property: tags
         direction: ASC
+
 ```

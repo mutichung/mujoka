@@ -6,7 +6,8 @@
       "fileVisibility": "supported",
       "propertyKeys": [],
       "hiddenFolders": [
-        "/tools"
+        "/tools",
+        "assets"
       ],
       "hiddenTags": [],
       "hiddenFileNames": [],
