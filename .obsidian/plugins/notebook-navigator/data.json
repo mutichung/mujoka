@@ -5,7 +5,9 @@
       "name": "Default",
       "fileVisibility": "supported",
       "propertyKeys": [],
-      "hiddenFolders": [],
+      "hiddenFolders": [
+        "/tools"
+      ],
       "hiddenTags": [],
       "hiddenFileNames": [],
       "hiddenFileTags": [],
@@ -502,7 +504,8 @@
     "movies",
     "recipes",
     "travel",
-    "templates"
+    "templates",
+    "tools"
   ],
   "rootTagOrder": [],
   "rootPropertyOrder": []

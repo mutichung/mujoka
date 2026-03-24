@@ -8,7 +8,15 @@
   "alwaysUpdateLinks": true,
   "newLinkFormat": "absolute",
   "userIgnoreFilters": [
-    "tools/",
-    "justfile"
+    ".justfile"
+  ],
+  "mobileToolbarCommands": [
+    "editor:undo",
+    "editor:redo",
+    "editor:insert-wikilink",
+    "editor:attach-file",
+    "editor:indent-list",
+    "editor:unindent-list",
+    "editor:configure-toolbar"
   ]
 }
