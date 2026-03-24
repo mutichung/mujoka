@@ -2,5 +2,6 @@
   "baseline-style@@accented-interface": true,
   "baseline-style@@color-scheme-light": "flexoki-light",
   "baseline-style@@color-scheme-dark": "atom-dark",
-  "baseline-style@@colorful-headings-text": true
+  "baseline-style@@colorful-headings-text": true,
+  "baseline-style@@color-scheme-accent": true
 }
