@@ -126,11 +126,11 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
-    options:
-      title: 目錄
-      folderClickBehavior: link
-      folderDefaultState: collapsed
-      useSavedState: false
+    # options:
+    #   title: 目錄
+    #   folderClickBehavior: link
+    #   folderDefaultState: collapsed
+    #   useSavedState: false
     layout:
       position: left
       priority: 50
