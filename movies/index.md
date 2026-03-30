@@ -22,7 +22,7 @@ views:
       direction: DESC
     image: note.cover
     imageFit: contain
-    imageAspectRatio: 1.4
+    imageAspectRatio: 0.7
   - type: table
     name: 一覽
     order:
