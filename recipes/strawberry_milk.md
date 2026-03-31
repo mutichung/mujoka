@@ -9,8 +9,10 @@ ingredients:
   - 煉乳
   - 牛奶
   - 白糖
-cover:
+cover: https://lh3.googleusercontent.com/pw/AP1GczP3Hrlys9CeNzfy91L3Iea7PPbKsi38TPzRgNCXWU5zPzB3ucvS4ji7uScK3Zi7Z1Tlydik3o0mV3_WAHiPA4FpIl1jGwbokxJXR02dRNbe-INT8qyl0bUQCZt5qmxTYeLDprF8lEeDyIhxH7WPmkXYcg=w960-h1706-s-no?authuser=0
 ---
+![](https://lh3.googleusercontent.com/pw/AP1GczP3Hrlys9CeNzfy91L3Iea7PPbKsi38TPzRgNCXWU5zPzB3ucvS4ji7uScK3Zi7Z1Tlydik3o0mV3_WAHiPA4FpIl1jGwbokxJXR02dRNbe-INT8qyl0bUQCZt5qmxTYeLDprF8lEeDyIhxH7WPmkXYcg=w960-h1706-s-no?authuser=0)
+
 一起來做草莓牛奶吧！
 ## 材料
 
