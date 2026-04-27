@@ -17,9 +17,9 @@ formulas:
 views:
   - type: cards
     name: 海報牆
-    groupBy:
-      property: released
-      direction: DESC
+    sort:
+      - property: created
+        direction: DESC
     image: note.cover
     imageFit: contain
     imageAspectRatio: 0.7
