@@ -216,7 +216,7 @@ plugins:
       showTags: true
       linkToMore: false
     layout:
-      position: left
+      position: afterBody
       priority: 60
       display: desktop-only
   - source: github:quartz-community/spacer
