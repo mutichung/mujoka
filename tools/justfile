@@ -12,7 +12,7 @@ install-deps:
 
 # Install quartz community plugins according to quartz.lock.json
 install-plugins:
-    cd {{quartz_dir}} && npx quartz plugin restore
+    cd {{quartz_dir}} && npx quartz plugin install --clean
 
 # First-time setup: copy assets, install deps, resolve plugins
 setup: copy-assets install-deps install-plugins
@@ -32,4 +32,4 @@ upgrade-quartz:
     just setup
 
 upgrade-plugins:
-    cd {{quartz_dir}} && npx quartz plugin update && npx quartz plugin restore
+    cd {{quartz_dir}} && npx quartz plugin install --latest && npx quartz plugin install --clean
