@@ -209,7 +209,7 @@ plugins:
         # GitHub: https://github.com/mutichung
         Mika: https://www.instagram.com/mika_indahouse/
   - source: github:quartz-community/recent-notes
-    enabled: true
+    enabled: false
     options:
       title: 最近
       limit: 5
