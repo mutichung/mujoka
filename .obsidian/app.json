@@ -8,7 +8,8 @@
   "alwaysUpdateLinks": true,
   "newLinkFormat": "absolute",
   "userIgnoreFilters": [
-    ".justfile"
+    ".justfile",
+    "tools/"
   ],
   "mobileToolbarCommands": [
     "editor:undo",

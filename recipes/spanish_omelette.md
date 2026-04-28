@@ -9,4 +9,5 @@ cover: "[[recipes/assets/spanish_omelette.png]]"
 ingredients:
   - 蛋
 ---
+
 ![[recipes/assets/spanish_omelette.png]]

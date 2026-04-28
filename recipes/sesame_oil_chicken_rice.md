@@ -10,4 +10,5 @@ ingredients:
   - 雞
   - 麻油
 ---
+
 ![[recipes/assets/sesame_oil_chicken_rice.png]]
