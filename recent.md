@@ -12,12 +12,18 @@ filters:
     - '!file.folder.startsWith("templates")'
 formulas:
   Category: file.folder
+  category: |-
+    if(file.inFolder("recipes"), "食譜",
+    if(file.inFolder("movies"), "電影",
+    if(file.inFolder("travel"), "旅行",
+    if(file.inFolder("blog"), "日常", file.folder
+    ))))
 views:
   - type: table
     name: Table
     order:
       - title
-      - file.folder
+      - formula.category
       - created
       - tags
     sort:
